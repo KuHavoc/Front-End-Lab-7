@@ -1,16 +1,78 @@
-# React + Vite
+# Лабораторна робота №7  
+## Дисципліна: «Основи FE-технологій»
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Тема  
+Робота з React. Створення та робота з компонентами. Робота з props.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Виконавець  
+**Іванюта Дмитро Володимирович**  
+Група: **ІМ-32**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Мета роботи  
+Ознайомитися з основами роботи з фреймворком **React**, навчитися створювати функціональні та класові компоненти, організовувати взаємодію між компонентами за допомогою **props**, а також перенести функціональність попередньої лабораторної роботи у React-застосунок.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Використані технології
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
+- **React**
+- **Vite**
+- **Node.js**, **npm**
+
+---
+
+## Опис роботи
+
+У даній лабораторній роботі було реалізовано React-застосунок, створений за допомогою **Vite**.  
+Функціональність лабораторної роботи №4 була повністю перенесена у React-компоненти.
+
+Застосунок складається з таких компонентів:
+
+### Основні компоненти:
+- **Header** – функціональний компонент, який містить ПІБ студента та інформацію про дату й місце народження. Реалізовано зміну кольору фону та тексту при кліку.
+- **Content** – класовий компонент, який містить інформацію про освіту, хобі, улюблені фільми та улюблене місто.
+- **Image** – функціональний компонент, що реалізує роботу з зображенням (додавання, збільшення, зменшення та видалення).
+
+### Додаткові компоненти:
+- **GoodsCard** – компонент картки товару, який отримує дані через `props`.
+- **GoodsGallery** – компонент галереї товарів, який відображає не менше 6 товарів.
+
+Для передачі даних між компонентами використано **props**, а для керування станом – **React Hooks (`useState`)**.
+
+---
+
+## Структура проєкту
+```text
+src/
+ ├─ components/
+ │   ├─ Header.jsx
+ │   ├─ Content.jsx
+ │   ├─ Image.jsx
+ │   ├─ GoodsCard.jsx
+ │   └─ GoodsGallery.jsx
+ ├─ App.jsx
+ ├─ main.jsx
+ └─ index.css
+```
+## Запуск проєкту локально
+
+### Встановити залежності:
+```
+npm install
+```
+
+### Запустити проєкт:
+```
+npm run dev
+```
+
+### Відкрити у браузері:
+```
+http://localhost:5173
+```
